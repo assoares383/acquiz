@@ -1,13 +1,8 @@
-import styled from "styled-components";
-import db from "../db.json";
+import styled from 'styled-components';
+import db from '../db.json';
 
-import QuizLogo from "../src/components/QuizLogo";
-import Widget from "../src/components/Widget";
-
-const Title = styled.h1`
-  font-size: 50px;
-  color: ${({ theme }) => theme.colors.primary};
-`;
+import QuizLogo from '../src/components/QuizLogo';
+import Widget from '../src/components/Widget';
 
 const BackgroundImage = styled.div`
   background-image: url(${db.bg});
@@ -38,7 +33,7 @@ export default function Home() {
             <h1>Teste Quiz</h1>
           </Widget.Header>
           <Widget.Content>
-            <h1>Teste Quiz</h1>
+            <h1>Teste Quiz d</h1>
             <p>Lorem ipsum</p>
           </Widget.Content>
         </Widget>
