@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import db from "../db.json";
 
+import QuizLogo from "../src/components/QuizLogo";
 import Widget from "../src/components/Widget";
 
 const Title = styled.h1`
@@ -31,6 +32,7 @@ export default function Home() {
   return (
     <BackgroundImage>
       <QuizContainer>
+        <QuizLogo />
         <Widget>
           <Widget.Header>
             <h1>Teste Quiz</h1>
