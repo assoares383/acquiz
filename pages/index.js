@@ -52,6 +52,7 @@ export default function Home() {
               <Input
                 onChange={eventInfo => setName(eventInfo.target.value)}
                 placeholder="Diz ai seu nome"
+                value={name}
               />
               <Button type="submit" disabled={name.length === 0}>
                 Jogar
