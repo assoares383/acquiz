@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Widget = styled.div`
   margin-top: 24px;
@@ -46,6 +46,39 @@ Widget.Content = styled.div`
   ul {
     list-style: none;
     padding: 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input {
+      margin-bottom: 15px;
+      padding: 7px;
+      outline: none;
+      box-shadow: none;
+    }
+    button {
+      background-color: #3fc0ac;
+      border: 2px solid #3fc0ac;
+      transition: all ease-in 0.3s;
+      padding: 5px;
+      border-radius: 4px;
+      color: #ffffff;
+      cursor: pointer;
+      outline: none;
+      box-shadow: none;
+      &:hover {
+        background-color: #1b6a63;
+        border-color: #1b6a63;
+      }
+      &:disabled {
+        opacity: 0.5;
+      }
+      &:disabled:hover {
+        background-color: #3fc0ac;
+        border: 2px solid #3fc0ac;
+        cursor: not-allowed;
+      }
+    }
   }
 `;
 

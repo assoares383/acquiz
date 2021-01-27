@@ -38,22 +38,19 @@ export default function Home() {
             <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <p>{db.description}</p>
             <form
-              onSubmit={function (eventInfo) {
-                eventInfo.preventDefault();
+              onSubmit={function (infosDoEvento) {
+                infosDoEvento.preventDefault();
                 router.push(`/quiz?name=${name}`);
-
                 console.log("Fazendo uma submissão por meio do react");
               }}
             >
               <input
-                type="text"
-                placeholder="Digite o seu nome"
-                onChange={function (eventInfo) {
-                  console.log(eventInfo.target.value);
-                  name = eventInfo.target.value;
+                onChange={function (infosDoEvento) {
+                  console.log(infosDoEvento.target.value);
+                  setName(infosDoEvento.target.value);
                 }}
+                placeholder="Diz ai seu nome"
               />
               <button type="submit" disabled={name.length === 0}>
                 Jogar {name}
