@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const Widget = styled.div`
   margin-top: 24px;
   margin-bottom: 24px;
   border: 1px solid ${({ theme }) => theme.colors.primary};
-  background: url("https://static-dm.akamaized.net/assassins-creed/valhalla/prod/ki_updates-highlight-content-bkg-mobile_ncsa.png")
+  background: url('https://static-dm.akamaized.net/assassins-creed/valhalla/prod/ki_updates-highlight-content-bkg-mobile_ncsa.png')
     no-repeat;
   border-radius: 4px;
   overflow: hidden;
@@ -55,29 +55,6 @@ Widget.Content = styled.div`
       padding: 7px;
       outline: none;
       box-shadow: none;
-    }
-    button {
-      background-color: #3fc0ac;
-      border: 2px solid #3fc0ac;
-      transition: all ease-in 0.3s;
-      padding: 5px;
-      border-radius: 4px;
-      color: #ffffff;
-      cursor: pointer;
-      outline: none;
-      box-shadow: none;
-      &:hover {
-        background-color: #1b6a63;
-        border-color: #1b6a63;
-      }
-      &:disabled {
-        opacity: 0.5;
-      }
-      &:disabled:hover {
-        background-color: #3fc0ac;
-        border: 2px solid #3fc0ac;
-        cursor: not-allowed;
-      }
     }
   }
 `;
