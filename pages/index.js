@@ -1,8 +1,10 @@
-import styled from 'styled-components';
-import db from '../db.json';
+import styled from "styled-components";
+import db from "../db.json";
+import { useRouter } from "next/router";
 
-import QuizLogo from '../src/components/QuizLogo';
-import Widget from '../src/components/Widget';
+import QuizLogo from "../src/components/QuizLogo";
+import Widget from "../src/components/Widget";
+import Footer from "../src/components/Footer";
 
 const BackgroundImage = styled.div`
   background-image: url(${db.bg});
@@ -24,28 +26,50 @@ export const QuizContainer = styled.div`
 `;
 
 export default function Home() {
+  const router = useRouter();
+  const [name, setName] = React.useState("");
+
   return (
     <BackgroundImage>
       <QuizContainer>
         <QuizLogo />
         <Widget>
           <Widget.Header>
-            <h1>Teste Quiz</h1>
+            <h1>{db.title}</h1>
           </Widget.Header>
           <Widget.Content>
-            <h1>Teste Quiz d</h1>
-            <p>Lorem ipsum</p>
+            <p>{db.description}</p>
+            <form
+              onSubmit={function (eventInfo) {
+                eventInfo.preventDefault();
+                router.push(`/quiz?name=${name}`);
+
+                console.log("Fazendo uma submissão por meio do react");
+              }}
+            >
+              <input
+                type="text"
+                placeholder="Digite o seu nome"
+                onChange={function (eventInfo) {
+                  console.log(eventInfo.target.value);
+                  name = eventInfo.target.value;
+                }}
+              />
+              <button type="submit" disabled={name.length === 0}>
+                Jogar {name}
+              </button>
+            </form>
           </Widget.Content>
         </Widget>
         <Widget>
           <Widget.Header>
-            <h1>Teste Quiz</h1>
+            <h1>Quizes da Galera</h1>
           </Widget.Header>
           <Widget.Content>
-            <h1>Teste Quiz</h1>
-            <p>Lorem ipsum</p>
+            <p>lorem ipsum dolor sit amet...</p>
           </Widget.Content>
         </Widget>
+        <Footer />
       </QuizContainer>
     </BackgroundImage>
   );
