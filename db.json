@@ -4,25 +4,57 @@
   "description": "Teste os seus conhecimentos sobre o mais recente lançamento da série de assassinos da Ubisoft.",
   "questions": [
     {
-      "image": "https://media.giphy.com/media/xUOxf3yDKCuwpOlT3i/giphy.gif",
-      "title": "Como fazer um seletor por id via CSS?",
-      "description": "Essa é pra aquecer",
-      "answer": 2,
+      "image": "https://th.bing.com/th/id/OIP.iouVrffKPetngnMIrvQSMwHaEK?pid=Api&rs=1",
+      "title": "Assassin’s Creed Valhalla foi lançado em que ano ?",
+      "answer": 1,
       "alternatives": [
-        ".elemento",
-        "*elemento",
-        "#elemento",
-        "%elemento"
+        "2019",
+        "2020",
+        "2021"
       ]
     },
     {
-      "image": "https://media.giphy.com/media/13FrpeVH09Zrb2/giphy.gif",
-      "title": "Como fazer um background gradiente com css?",
-      "description": "Faz tempo em haha",
-      "answer": 0,
+      "image": "https://th.bing.com/th/id/Rbffa3e50c6a46b27a13fd4b10f137ea0?rik=I8QMlhh03sy6Uw&riu=http%3a%2f%2fimages.pushsquare.com%2f3727e2c6b7681%2fassassins-creed-valhalla-ps5-ps4-screenshots.original.jpg&ehk=l63w5PBe2Uj3XUSu7YWrgsC7%2fNKd4Y5FCyIWdfKhpFQ%3d&risl=&pid=ImgRaw",
+      "title": "Para qual plataforma foi lançado o game?",
+      "answer": 3,
       "alternatives": [
-        "background: linear-gradient(#e66465, #9198e5);",
-        "background: gradient(#e66465, #9198e5);"
+        "Xbox One, Ps3 e Ps4",
+        "Ps2, Ps3 e Xbox 360",
+        "Ps2, PS3, Ps4, Ps5, Xbox One",
+        "PC, Xbox One, Xbox XS, Ps4 e Ps5"
+      ]
+    },
+    {
+      "image": "https://images.wallpapersden.com/image/wxl-eivor-assassin-s-creed-valhalla_70471.jpg",
+      "title": "Qual é o nome do personagem principal ?",
+      "description": "Pergunta fácil em!",
+      "answer": 1,
+      "alternatives": [
+        "Ã-vor",
+        "Eivor",
+        "Sigurd"
+      ]
+    },
+    {
+      "image": "https://staticctf.akamaized.net/J3yJr34U2pZ2Ieem48Dwy9uqj5PNUQTn/2pCpOhfRfDJasr1CTRJCH2/e3c6f7ffd2bc74748a5fe61583316d97/_UN__News__Assassin___s_Creed_Valhalla_____Become_a_Legendary_Viking_Raider_-_England_960x540.jpg",
+      "title": "O jogo se passa em quais países?",
+      "description": "E agora? Você sabe?",
+      "answer": 2,
+      "alternatives": [
+        "Suécia e Inglaterra",
+        "Finlândia e Dinamarca",
+        "Noruega e na Inglaterra"
+      ]
+    },
+    {
+      "image": "https://d2skuhm0vrry40.cloudfront.net/2020/articles/2020-05-11-15-37/assassins-creed-valhalla-season-pass-unlocks-beowulf-mission-1589207818199.jpg/EG11/resize/1200x-1/assassins-creed-valhalla-season-pass-unlocks-beowulf-mission-1589207818199.jpg",
+      "title": "Quem é Beowulf",
+      "description": "E agora? Você sabe?",
+      "answer": 1,
+      "alternatives": [
+        "Herói Viking",
+        "Herói escandinavo mitológico",
+        "Um Rei"
       ]
     }
   ],

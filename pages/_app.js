@@ -52,12 +52,6 @@ export default function App({ Component, pageProps }) {
         <link
           data-react-helmet="true"
           rel="icon"
-          sizes="32x32"
-          href="https://static-dm.akamaized.net/assassins-creed/valhalla/prod/favicon-32x32.png"
-        />
-        <link
-          data-react-helmet="true"
-          rel="icon"
           sizes="96x96"
           href="https://static-dm.akamaized.net/assassins-creed/valhalla/prod/favicon-96x96.png"
         />
