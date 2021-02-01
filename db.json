@@ -21,7 +21,7 @@
         "Xbox One, Ps3 e Ps4",
         "Ps2, Ps3 e Xbox 360",
         "Ps2, PS3, Ps4, Ps5, Xbox One",
-        "PC, Xbox One, Xbox XS, Ps4 e Ps5"
+        "PC, Xbox One, Xbox X, Ps4 e Ps5"
       ]
     },
     {
@@ -59,7 +59,8 @@
     }
   ],
   "external": [
-    ""
+    "https://aluraquiz-css.omariosouto.vercel.app/",
+    "https://aluraquiz-marvel.omariosouto.vercel.app/"
   ],
   "theme": {
     "colors": {

@@ -1,0 +1,36 @@
+import { ThemeProvider } from 'styled-components';
+import QuizScreen from '../../src/screens/Quiz';
+
+export default function QuizPage({ externalDB }) {
+  return (
+    <ThemeProvider theme={externalDB.theme}>
+      <QuizScreen
+        externalQuestions={externalDB.questions}
+        externalBg={externalDB.bg}
+      />
+    </ThemeProvider>
+  );
+}
+
+export async function getServerSideProps(context) {
+  const [projectName, githubUser] = context.query.id.split('___');
+
+  try {
+    const externalDB = await fetch(
+      `https://${projectName}.${githubUser}.vercel.app/api/db`,
+    )
+      .then(respostaDoServer => {
+        if (respostaDoServer.ok) {
+          return respostaDoServer.json();
+        }
+        throw new Error('Falha em pegar os dados');
+      })
+      .then(respostaConvertidaEmObjeto => respostaConvertidaEmObjeto);
+
+    return {
+      props: { externalDB },
+    };
+  } catch (err) {
+    throw new Error(err);
+  }
+}

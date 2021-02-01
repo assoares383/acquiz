@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Widget from '../Widget';
 import AlternativesForm from '../AlternativesForm';
+import BackLinkArrow from '../BackLinkArrow';
 import Button from '../Button';
 
 function QuestionWidget({
@@ -19,6 +20,7 @@ function QuestionWidget({
   return (
     <Widget>
       <Widget.Header>
+        <BackLinkArrow href="/" />
         <h3>{`Pergunta ${questionIndex + 1} de ${totalQuestions}`}</h3>
       </Widget.Header>
 

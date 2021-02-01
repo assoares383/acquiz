@@ -43,9 +43,17 @@ Widget.Content = styled.div`
   & > *:last-child {
     margin-bottom: 0;
   }
+  p {
+    span {
+      margin: 0 4px;
+    }
+  }
   ul {
     list-style: none;
     padding: 0;
+    li span {
+      margin: 0 5px 0 0;
+    }
   }
   form {
     display: flex;
